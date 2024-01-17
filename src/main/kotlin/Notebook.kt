@@ -3,7 +3,7 @@ class Notebook {
 
     fun onStart(){
         println("Приложение запускается...")
-        archivesMenu()
+        runMenu()
         println("Приложение завершает свою работу")
     }
 
@@ -32,7 +32,7 @@ class Notebook {
         } else false
     }
 
-    private fun archivesMenu() {
+    private fun runMenu() {
         var isRunning = true
         while (isRunning) {
             Menu(listOfArchives) {}.printMenu("Список архивов:")
